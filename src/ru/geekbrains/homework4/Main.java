@@ -45,14 +45,14 @@ public class Main {
     }
 
     public static boolean checkWin(char symbol) {
-        if (verticals(symbol)) {
+        if (verticalsAndHorizontals(symbol)) {
             return true;
         } else {
             return diagonals(symbol);
         }
     }
 
-    public static boolean verticals(char symbol) {
+    public static boolean verticalsAndHorizontals(char symbol) {
         int mapLength = map.length - 1;
         int dotsToWin = 0;
         for (int a = 0; a <= mapLength; a++) {
