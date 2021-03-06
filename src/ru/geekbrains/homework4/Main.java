@@ -66,7 +66,6 @@ public class Main {
                     dotsToWin = 0;
                 }
             }
-            dotsToWin = 0;
             for (int b = 0; b <= mapLength; b++) {
                 if (map[b][a] == symbol) {
                     dotsToWin++;
@@ -77,7 +76,6 @@ public class Main {
                     dotsToWin = 0;
                 }
             }
-            dotsToWin = 0;
         }
         return false;
     }
@@ -96,7 +94,6 @@ public class Main {
                     dotsToWin = 0;
                 }
             }
-            dotsToWin = 0;
             for (int b = 0; b <= mapLength; b++) {
                 if (map[b][mapLength - b] == symbol) {
                     dotsToWin++;
@@ -107,7 +104,6 @@ public class Main {
                     dotsToWin = 0;
                 }
             }
-            dotsToWin = 0;
         }
         return false;
     }
