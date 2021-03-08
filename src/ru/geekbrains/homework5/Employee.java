@@ -6,26 +6,27 @@ public class Employee {
     private String position;
     private String email;
     private int phone;
-    private int wages;
+    private int salary;
     private int age;
 
-    public Employee(String fullName, String position, String email, int phone, int wages, int age) {
+    public Employee(String fullName, String position, String email, int phone, int salary, int age) {
         this.fullName = fullName;
         this.position = position;
         this.email = email;
         this.phone = phone;
-        this.wages = wages;
+        this.salary = salary;
         this.age = age;
     }
 
     public void employeeInformation() {
-        System.out.println("Имя сотрудника: " + fullName + "\n" +
+        System.out.println(
+                "------------------------------------------\n" +
+                "Имя сотрудника: " + fullName + "\n" +
                 "Должность сотрудника: " + position + "\n" +
                 "Email сотрудника: " + email + "\n" +
                 "Номер телефона сотрудника: " + phone + "\n" +
-                "ЗП сотрудника: " + wages + "\n" +
-                "Возраст сотрудника: " + age + "\n" +
-                "------------------------------------------");
+                "ЗП сотрудника: " + salary + "\n" +
+                "Возраст сотрудника: " + age);
     }
 
     public String getFullName() {
@@ -60,12 +61,12 @@ public class Employee {
         this.phone = phone;
     }
 
-    public int getWages() {
-        return wages;
+    public int getSalary() {
+        return salary;
     }
 
-    public void setWages(int wages) {
-        this.wages = wages;
+    public void setSalary(int salary) {
+        this.salary = salary;
     }
 
     public int getAge() {
