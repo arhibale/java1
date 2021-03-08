@@ -12,7 +12,9 @@ public class Main {
         personArray[4] = new Employee("Щербаков Леонард Анатольевич", "Биржевой маклер", "sherbakov@email.com", 880089, 70000, 44);
 
         for (Employee employee : personArray) {
-            employee.employeeInformation();
+            if (employee.getAge() >= 40) {
+                employee.employeeInformation();
+            }
         }
     }
 }
